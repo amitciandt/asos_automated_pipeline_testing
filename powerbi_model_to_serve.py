@@ -10,7 +10,7 @@ all_json_files = glob.glob(search_pattern, recursive=True)
 json_data_map = {}
 
 for filename in all_json_files:
-    print(filename)
+     print(filename)
      with open(filename, 'r', encoding='utf-8') as f:
          data = json.load(f)
          key = os.path.splitext(filename)[0]
