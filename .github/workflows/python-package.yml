@@ -38,3 +38,12 @@ jobs:
     - name: Run script
       run: |
         python3 powerbi_model_to_serve.py
+    - name: Upload Python output as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        # Assign a name to your artifact
+        name: semantic-model-mapping
+        # Specify the path to the file you created
+        path: powerbi_model_map.csv
+        # Optional: Retain the artifact for a specific duration (default 90 days)
+        retention-days: 7
