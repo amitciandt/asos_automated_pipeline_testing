@@ -37,4 +37,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run script
       run: |
-        python3 .github/scripts/powerbi_model_to_serve.py
+        python3 powerbi_model_to_serve.py
