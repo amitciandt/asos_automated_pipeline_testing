@@ -6,7 +6,9 @@ import csv
 import glob
 
 search_pattern = os.path.join(os.getcwd(),'/powerbi/models','**/*.json')
+print(search_pattern)
 all_json_files = glob.glob(search_pattern, recursive=True)
+print(all_json_files)
 json_data_map = {}
 
 for filename in all_json_files:
@@ -30,7 +32,6 @@ def check_string_in_json(data, target_string):
              return True
      return False
 
-print(json_data_map)
 filtered_dict = {key: value for key, value in json_data_map.items() if check_string_in_json(value,'SourceTable')}
 modified_dict = {key.split('/')[8]+','+key.split('/')[-1]: value['extendedProperties'] for key, value in filtered_dict.items()}
 updated_dict = {key: value[1]['value']+'.'+value[2]['value']+'.'+value[3]['value'] for key, value in modified_dict.items()}
