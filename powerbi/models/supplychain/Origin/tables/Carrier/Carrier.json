@@ -1,0 +1,23 @@
+{
+  "name": "Carrier",
+  "description": "Table holding the Carrier dimension",
+  "lineageTag": "8bfb885d-2610-4960-b408-a201a1d12931",
+  "extendedProperties": [
+    {
+      "name": "Source",
+      "value": "Databricks"
+    },
+    {
+      "name": "SourceCatalog",
+      "value": "supplychain_e2e"
+    },
+    {
+      "name": "SourceDatabase",
+      "value": "serve"
+    },
+    {
+      "name": "SourceTable",
+      "value": "dim_carrier_v1"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Dim Carrier Sk",
+  "dataType": "string",
+  "description": "Primary Key - Surrogate key assigned to the Product Record",
+  "isHidden": true,
+  "isKey": true,
+  "isNullable": false,
+  "sourceColumn": "dim_carrier_sk",
+  "isAvailableInMdx": false,
+  "lineageTag": "5eee7725-9994-439e-8622-974f24eafb5e",
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "name": "SourceColumn",
+      "value": "dim_carrier_sk"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "BestPracticeAnalyzer_IgnoreRules",
+      "value": "{\"RuleIDs\":[\"RELATIONSHIP_COLUMNS_SHOULD_BE_OF_INTEGER_DATA_TYPE\"]}"
+    }
+  ]
+}

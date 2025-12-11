@@ -1,0 +1,14 @@
+{
+  "name": "Carrier Name",
+  "dataType": "string",
+  "description": "The name of the company ASOS has a contract with to facilitate the physical movement of our goods into our Fulfillment Centres.",
+  "sourceColumn": "carrier_name",
+  "lineageTag": "ab90b66b-e071-4ae2-ab85-df8a8217c44b",
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "name": "SourceColumn",
+      "value": "carrier_name"
+    }
+  ]
+}

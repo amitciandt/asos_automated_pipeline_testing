@@ -1,0 +1,9 @@
+{
+  "name": "Carrier",
+  "description": "Table holding the Carrier dimension",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": "let DatabricksTable = _fn_GetDataFromDBX(\"supplychain_e2e\", \"serve\", \"dim_carrier_v1\") in DatabricksTable"
+  }
+}
