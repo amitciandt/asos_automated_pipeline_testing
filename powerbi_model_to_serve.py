@@ -5,9 +5,7 @@ import json
 import csv
 import glob
 
-print(os.path.join(os.getcwd(),'\\powerbi\\models','**/*.json'))
-'''
-search_pattern = os.path.join('D:\\Usuarios\\Amit\\Downloads\\ASOS\\asos-data-ade-powerbi-main\\powerbi\\models', '**/*.json')
+search_pattern = os.path.join(os.getcwd(),'/powerbi/models','**/*.json')
 all_json_files = glob.glob(search_pattern, recursive=True)
 json_data_map = {}
 
@@ -51,4 +49,3 @@ with open(filename, mode='w', newline='', encoding='utf-8') as file:
      writer = csv.writer(file, quoting=csv.QUOTE_MINIMAL)
      writer.writerow(newlist[0])
      writer.writerows(newlist[1:])
-'''
