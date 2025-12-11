@@ -5,9 +5,7 @@ import json
 import csv
 import glob
 
-cwd = os.getcwd()
-print(cwd)
-search_pattern = os.path.join('/home/runner/work/asos_automated_pipeline_testing/asos_automated_pipeline_testing/powerbi/models','**/*.json')
+search_pattern = os.path.join(os.getcwd()+'/powerbi/models','**/*.json')
 print(search_pattern)
 all_json_files = glob.glob(search_pattern, recursive=True)
 print(all_json_files)
